@@ -17,13 +17,14 @@
 
 body {
     font-family: Roboto, sans-serif;
-    margin: 1em 6em;
     background-image: url('public/overlay.svg'), url('public/path.svg');
     background-repeat: no-repeat;
     background-size: 1100.86px 450px, cover;
     background-position: 494.37px 200px, 300.29px -509px;
 }
-
+main,header,footer{
+    margin: 1em 6em;
+}
 ul,
 li {
     list-style: none;
@@ -128,8 +129,7 @@ h2{
     font-size: 36px;
 }
 .feature{
-    height: 70vh;
-
+    height: 70vh; 
     display: flex;
     flex-direction: row;
     gap:10em;
@@ -182,4 +182,43 @@ justify-content: center;
 .fit-content{
     width: fit-content;
     margin: 1em 0;
+}
+#pricing{
+
+    background-image: url('public/pricing-path.svg') ;
+    background-size:  none;
+height: 100vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+padding: 8em 24em;
+text-align: center;
+}
+#pricing p{
+    
+color:#6F7CB2;
+font-size:16px;
+
+}
+#offer{
+    margin: 5em 0;
+}
+#price{
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 66px;
+    color:#222F65
+}
+#price+*{
+    color:#37447E
+}
+.followup-offer{
+    display: flex;
+    flex-direction: column;
+}
+.followup-offer span{
+    color: #5f6a71;
+    font-size: 16px;
+    line-height: 18px;
 }
