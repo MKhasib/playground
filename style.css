@@ -21,9 +21,7 @@ body {
     background-image: url('public/overlay.svg'), url('public/path.svg');
     background-repeat: no-repeat;
     background-size: 1100.86px 450px, cover;
-    /* Set width and height */
     background-position: 494.37px 200px, 300.29px -509px;
-    /* Set position */
 }
 
 ul,
@@ -55,7 +53,9 @@ button {
     color: var(--secondary-color);
     font-weight: 500;
 }
-
+h2,h3{
+    margin: 1em 0;
+}
 button {
     all: unset;
     font-size:16px;
@@ -123,4 +123,48 @@ justify-content: center;
     display: flex;
     gap:3em;
     margin-top:4em
+}
+h2{
+    font-size: 36px;
+}
+
+.feature{
+    display: flex;
+    flex-direction: row;
+}
+.feature p{
+    color: #6F7CB2;
+    font-weight: 400;
+    font-size:16px
+}
+.feature aside{
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size:  500.86px 500px;
+    background-position: 0px -50px;
+}
+.feature{
+    height: 80vh;
+}
+#first-feature aside{
+    background-image: url('public/first-feature.svg') ;
+}
+.sub-features{
+    margin: 2em 0;
+    display: flex;
+    flex-direction: row;
+    gap:5em
+}
+.sub-features h3{
+    font-weight: bold;
+
+}
+.sub-features p{
+    margin:1em 0;
+    color: #8b979f;
+    font-size: 12px;
+    line-height: 18px;
+}
+#second-feature aside{
+    background-image: url('public/second-feature.svg') ;
 }
