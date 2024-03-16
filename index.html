@@ -4,33 +4,42 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Landing</title>
+        <link rel="stylesheet" href="style.css">
 	</head>
 
 	<body>
+        <div id="background"></div>
 		<header>
-			<nav>
+			<nav class="nav">
 				<ul>
 					<li>Home</li>
 					<li>About</li>
 					<li>Contact</li>
 				</ul>
-				<h1>Landing</h1>
-				<button>Buy now</button>
+				<div class="parent-logo">
+                    <h1 id="logo">Landing</h1>
+                </div>
+				<button class="btn btn-primary">Buy now</button>
 			</nav>
 		</header>
 		<main>
-			<article>
+			<article id="hero">
 				<section>
 					<h1>Introduce Your Product Quickly & Effectively</h1>
-					<p>
-						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-						commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-						penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-						Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
-						Nulla consequat massa quis enim.
-					</p>
-					<div><button>Purchase UI Kit</button><button>Learn More</button></div>
+					<div class="content">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+                            penatibus et magnis dis parturient montes, nascetur ridiculus
+                        </p>
+                        <p>
+                            mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+                        </p>
+                    </div>
+					<div class="actions"><button class="btn btn-primary">Purchase UI Kit</button><button class="btn btn-secondary">Learn More</button></div>
 				</section>
+                <aside>
+                </aside>
 			</article>
             <article>
                 <section>
@@ -82,6 +91,9 @@
                     <h2>Light, Fast & Powerful</h2>
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus </p>
                     <p>mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                    <button class="btn btn-primary">
+                        Purchase Now
+                    </button>
                 </aside>
             </article>
             <article>
@@ -103,13 +115,13 @@
                     <span>
                         See, One price. Simple.
                     </span>
-                    <button>Purchase Now</button>
+                    <button class="btn btn-primary">Purchase Now</button>
                 </div>
             </article>
 		</main>
         <footer>
             <div>
-                <span>©2023 Yourcompany</span>Landing<span></span><button>Purchase now</button>
+                <span>©2023 Yourcompany</span>Landing<span></span><button class="btn btn-primary">Purchase now</button>
             </div>
             <div>
 

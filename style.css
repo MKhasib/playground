@@ -1,0 +1,126 @@
+@font-face {
+    font-family: Roboto;
+    src: url('path/to/fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+
+:root {
+    --main-color: #505F98;
+    --secondary-color: #091133;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    margin: 1em 6em;
+    background-image: url('public/overlay.svg'), url('public/path.svg');
+    background-repeat: no-repeat;
+    background-size: 1100.86px 450px, cover;
+    /* Set width and height */
+    background-position: 494.37px 200px, 300.29px -509px;
+    /* Set position */
+}
+
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+p,
+li {
+    color: var(--main-color);
+    font-weight: 400;
+    font-size: 14px;
+
+}
+p{
+line-height: 30px;
+font-size: 18px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button {
+    color: var(--secondary-color);
+    font-weight: 500;
+}
+
+button {
+    all: unset;
+    font-size:16px;
+    border-radius: 2px;
+}
+.parent-logo{
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+#logo {
+    color: #37447E;
+    font-size: 26px;
+}
+
+.btn {
+    padding: 0.5em 4em;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.btn-primary {
+    background-color: #111B47;
+}
+
+.btn-secondary {
+    background-color: white;
+    color: #091133;
+    border: 2px solid #091133
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 60px;
+}
+
+.nav>ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3em
+}
+
+#hero{
+    margin-top: 10em;
+    display: flex;
+    height: 50vw;
+}
+#hero section{
+    flex-basis: 50%;
+}
+
+#hero h1{
+    font-size:50px
+}
+
+.content p{
+    margin: 1em 0;
+}
+.actions{
+    display: flex;
+    gap:3em;
+    margin-top:4em
+}
